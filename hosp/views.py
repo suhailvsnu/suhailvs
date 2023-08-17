@@ -64,7 +64,7 @@ def upddoc2(request,id):
     a.age=request.POST.get('age')
     a.specilization=request.POST.get('spl')
     a.experience=request.POST.get('exp')
-    a.salary=request.POST.get('sal')
+    # a.salary=request.POST.get('sal')
     a.save()
     return redirect('/doctorview/')
 
