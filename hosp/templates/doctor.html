@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor</title>
+</head>
+<body>
+    <h2> DoctorForm</h2>
+
+    <form action="/adddoctor/" method="post">
+        {% csrf_token %}
+        <label >Name:</label>
+        <input type="text"  name="name" ><br><br>
+
+        <label >Age:</label>
+        <input type="text" name="age" required><br><br>
+
+        <label >Specilization:</label>
+        <input type="text" " name="spcl" required><br><br>
+        <label >Experience:</label>
+        <input type="text" " name="exp" required><br><br>
+
+        <label >Salary:</label>
+        <input type="text" " name="sal" required><br><br>
+
+
+       
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

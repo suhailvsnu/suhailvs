@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <table>
+            
+              <th>Name</th>
+              <th>Age</th>
+              <th>specilization</th>
+              <th>Experience</th>
+              <th>Salary</th>
+              <th>#</th>
+            <tbody>
+                {%for e in data%}
+                <tr>
+                    <td>{{e.name}} </td>
+                    <td>{{e.age}}</td>
+                    <td>{{e.specilization}}</td>
+                    <td>{{e.experience}}</td>
+                    <td>{{e.salary}}</td>
+                    <td><a href="/deldoc/{{e.id}}">Delete</a></td>
+                    <td><a href="/updtdoc1/{{e.id}}">Update</a></td>
+                </tr>
+                {%endfor%}
+            </tbody>
+            </table>
+        </body>
+    </html>
+
+                

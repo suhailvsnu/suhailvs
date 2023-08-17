@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Nurse details</title>
+    </head>
+    <body>
+        <div>
+            <form action="/updnurse2/{{x.id}}" method="POST">
+                {% csrf_token %} 
+                <label>Name</label>
+                <input type="text" name="name" value="{{x.name}}"><br><br>
+                <label>Age</label>
+                <input type="text" name="age" value="{{x.age}}"><br><br>
+                <label>Qualification</label>
+                <input type="text" name="qal" value="{{x.qualification}}"><br><br>
+                <label>Experience</label>
+                <input type="text" name="exp"value="{{x.experience}}"><br><br>
+                <label>Salary</label>
+                <input type="text" name="sal"value="{{x.salary}}"><br><br>
+
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>
